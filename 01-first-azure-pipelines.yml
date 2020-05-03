@@ -13,7 +13,7 @@ pool:
 jobs:
 - job: Job1
   steps:
-  - script: echo Hello, world Changed!
+  - script: echo Job1 - Hello, world Changed!
     displayName: 'Run a one-line script'
 
   - script: |
@@ -21,3 +21,8 @@ jobs:
       echo See https://aka.ms/yaml
       echo more info
     displayName: 'Run a multi-line script'
+- job: Job2
+  steps:
+  - script: 
+      echo Job2!
+    displayName: 'Run a one-line script'
