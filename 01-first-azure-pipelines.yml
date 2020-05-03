@@ -9,8 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-#Pipelines > Stages > Jobs > Tasks(Steps)
-
+# Pipelines > Stages > Jobs > Tasks(Steps)
+jobs:
 - job: Job1
   steps:
   - script: echo Hello, world Changed!
